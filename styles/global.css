@@ -1,0 +1,20 @@
+/* styles/global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles/global.css */
+.green {
+  color: green;
+  transition: color 1s ease-in-out;
+}
+
+.red {
+  color: red;
+  transition: color 1s ease-in-out;
+}
+
+.blue {
+  color: blue;
+  transition: color 1s ease-in-out;
+}
