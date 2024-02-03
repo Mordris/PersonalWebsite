@@ -23,7 +23,7 @@ const Introduction = ({ jobState }) => {
         </p>
       </div>
       <div className="flex justify-center">
-        <ul className="flex items-center mt-12 gap-6 py-3 text-gray-600">
+        <ul className="flex items-center mt-12 gap-6 py-3 text-gray-600 dark:text-gray-400">
           <li>
             <a href="https://instagram.com/emregltp0">
               <AiFillInstagram className="text-4xl md:text-5xl m-auto" />

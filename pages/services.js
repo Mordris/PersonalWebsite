@@ -6,7 +6,7 @@ import software from "../public/software.jpg";
 
 const Service = ({ image, title, description, technology }) => {
   return (
-    <div className="text-center shadow-lg p-10 rounded-xl my-10 border border-teal-400">
+    <div className="text-center shadow-lg p-10 rounded-xl my-10 border border-teal-400 dark:bg-gray-900">
       <Image
         className="m-auto"
         src={image}
@@ -68,7 +68,7 @@ const Services = () => {
   return (
     <section>
       <div>
-        <h3 className="text-3xl py-1">Services I offer</h3>
+        <h3 className="text-4xl py-2">Services</h3>
         <p className="text-lg py-5 leading-8 text-gray-800 dark:text-gray-200">
           I&apos;m a software engineer based in Istanbul, Turkey specializing in
           building exceptional websites, applications, and everything in

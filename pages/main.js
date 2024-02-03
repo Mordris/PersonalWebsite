@@ -36,6 +36,13 @@ export default function Main({ darkMode, setDarkMode }) {
         className={`bg-white px-10 md:px-20 lg:px-40 ${
           darkMode ? "dark:bg-gray-900 dark:text-gray-200" : ""
         }`}
+        style={{
+          backgroundImage: darkMode
+            ? "url('/moon.png')" // Adjust the path if needed
+            : "none",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
       >
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
         <Introduction jobState={jobState} />
