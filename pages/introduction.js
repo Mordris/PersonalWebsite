@@ -1,10 +1,17 @@
 // introduction.js
-import React, { useEffect } from "react";
+import React from "react";
 import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Image from "next/image";
 import me from "../public/me.jpg";
 
 const Introduction = ({ jobState }) => {
+  if (!jobState) {
+    // If jobState is not defined yet, you can return a loading state or null
+    return null; // or return a loading spinner or message
+  }
+
+  const { title, color } = jobState;
+
   return (
     <section className="min-h-screen">
       <div>
@@ -12,9 +19,9 @@ const Introduction = ({ jobState }) => {
           Hi, I&apos;m Yunus Emre Gültepe
         </h1>
         <h2
-          className={`text-2xl text-center font-bold mb-6 md:text-3xl ${jobState.color}`}
+          className={`text-2xl text-center font-bold mb-6 md:text-3xl ${color}`}
         >
-          {jobState.title}
+          {title}
         </h2>
         <p className="text-lg py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-200">
           I&apos;m a software engineer based in Istanbul, Turkey specializing in
