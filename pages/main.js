@@ -39,7 +39,7 @@ export default function Main({ darkMode, setDarkMode }) {
         style={{
           backgroundImage: darkMode
             ? "url('/moon.png')" // Adjust the path if needed
-            : "none",
+            : "url('/moon-light.png')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}

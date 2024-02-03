@@ -6,7 +6,7 @@ import software from "../public/software.jpg";
 
 const Service = ({ image, title, description, technology }) => {
   return (
-    <div className="text-center shadow-lg p-10 rounded-xl my-10 border border-teal-400 dark:bg-gray-900">
+    <div className="text-center shadow-lg p-10 rounded-xl my-10 border bg-gray-100 border-teal-400 dark:bg-gray-900">
       <Image
         className="m-auto"
         src={image}
