@@ -1,4 +1,4 @@
-// pages/_app.js
+// _app.js
 
 import "../styles/global.css";
 

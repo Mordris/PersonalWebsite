@@ -6,8 +6,7 @@ import me from "../public/me.jpg";
 
 const Introduction = ({ jobState }) => {
   if (!jobState) {
-    // If jobState is not defined yet, you can return a loading state or null
-    return null; // or return a loading spinner or message
+    return null;
   }
 
   const { title, color } = jobState;

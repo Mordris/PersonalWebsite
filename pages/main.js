@@ -37,8 +37,9 @@ export default function Main({ darkMode, setDarkMode }) {
           darkMode ? "dark:bg-gray-900 dark:text-gray-200" : ""
         }`}
         style={{
+          // I will fix this for small screens
           backgroundImage: darkMode
-            ? "url('/moon.png')" // Adjust the path if needed
+            ? "url('/moon.png')"
             : "url('/moon-light.png')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",

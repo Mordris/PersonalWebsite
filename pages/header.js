@@ -6,7 +6,7 @@ const Header = ({ darkMode, setDarkMode }) => {
   const handleDownloadResume = () => {
     // Create a link element
     const link = document.createElement("a");
-    // Set the href attribute to the path of your PDF file
+    // Set the href attribute to the path of the PDF file
     link.href = "/resume/YunusEmreGultepe.pdf";
     // Set the download attribute to specify the file name
     link.download = "YunusEmreGultepe.pdf";
