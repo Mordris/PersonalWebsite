@@ -1,13 +1,14 @@
 // main.js
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "./header";
 import Introduction from "./introduction";
 import Services from "./services";
 import Portfolio from "./portfolio";
 import Footer from "./footer";
+import Contact from "./contact";
 
 export default function Main({ darkMode, setDarkMode }) {
-  const [jobState, setJobState] = React.useState({
+  const [jobState, setJobState] = useState({
     title: "Full-Stack Developer",
     color: "yellow",
   });
@@ -32,23 +33,41 @@ export default function Main({ darkMode, setDarkMode }) {
 
   return (
     <div>
+      <style jsx>{`
+        main {
+          min-height: 100vh;
+          background-image: url(${darkMode ? "/moon.png" : "/moon-light.png"});
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-attachment: fixed;
+          position: relative;
+        }
+
+        main::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: ${darkMode
+            ? "rgba(0, 0, 0, 0.5)"
+            : "rgba(255, 255, 255, 0.5)"};
+          z-index: -1; /* Ensure the overlay is behind the content */
+        }
+      `}</style>
+
       <main
-        className={`bg-white px-10 md:px-20 lg:px-40 ${
-          darkMode ? "dark:bg-gray-900 dark:text-gray-200" : ""
+        className={`px-10 md:px-20 lg:px-40 ${
+          darkMode ? "dark:bg-gray-950 dark:text-gray-200" : ""
         }`}
-        style={{
-          // I will fix this for small screens
-          backgroundImage: darkMode
-            ? "url('/moon.png')"
-            : "url('/moon-light.png')",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
       >
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
         <Introduction jobState={jobState} />
         <Services />
         <Portfolio />
+        <Contact />
       </main>
       <Footer />
     </div>

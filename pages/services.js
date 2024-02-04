@@ -68,11 +68,20 @@ const Services = () => {
   return (
     <section>
       <div>
-        <h3 className="text-4xl py-2">Services</h3>
-        <p className="text-lg py-5 leading-8 text-gray-800 dark:text-gray-200">
-          I&apos;m a software engineer based in Istanbul, Turkey specializing in
-          building exceptional websites, applications, and everything in
-          between.
+        <h3
+          className="text-4xl py-2"
+          style={{ textShadow: "1px 1px 1px cyan" }}
+        >
+          Services
+        </h3>
+        <p
+          className="text-lg py-5 leading-8 text-gray-800 dark:text-gray-200 "
+          style={{ textShadow: "1px 1px 1px cyan" }}
+        >
+          I offer a range of services to help you achieve the results
+          you&apos;re after. Not sure what you need, or what it costs? I can
+          explain what services are right for you and tell you more about our
+          fees. Get in touch below.
         </p>
       </div>
       <div className="lg:flex gap-10 ">

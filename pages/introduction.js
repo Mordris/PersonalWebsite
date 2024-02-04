@@ -22,7 +22,7 @@ const Introduction = ({ jobState }) => {
         >
           {title}
         </h2>
-        <p className="text-lg py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-200">
+        <p className="text-xl py-5 leading-8 font-semibold text-gray-950 md:text-2xl max-w-2xl mx-auto dark:text-gray-200">
           I&apos;m a software engineer based in Istanbul, Turkey specializing in
           building exceptional websites, applications, and everything in
           between.

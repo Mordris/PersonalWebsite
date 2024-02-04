@@ -54,8 +54,16 @@ const Portfolio = () => {
   return (
     <section className="py-10">
       <div>
-        <h3 className="text-4xl py-2">Portfolio</h3>
-        <p className="text-lg py-5 leading-8 text-gray-800 dark:text-gray-200">
+        <h3
+          className="text-4xl py-2"
+          style={{ textShadow: "1px 1px 1px cyan" }}
+        >
+          Portfolio
+        </h3>
+        <p
+          className="text-lg py-5 leading-8 text-gray-800 dark:text-gray-200"
+          style={{ textShadow: "1px 1px 1px cyan" }}
+        >
           As a seasoned software engineer, I specialize in the art of building
           exceptional websites and applications. My portfolio showcases a
           diverse range of projects, each a testament to my skills in creating
