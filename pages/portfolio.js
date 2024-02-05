@@ -32,22 +32,28 @@ const ProjectCard = ({ imgSrc, name, description }) => {
 const Portfolio = () => {
   const projects = [
     {
-      imgSrc: "Portfolio1.png",
+      imgSrc: "Project1.png",
       name: "Country Information App - React.js",
       description:
         "Displays information about countries using an API. Built using React.js with search, sort, and dark mode features.",
     },
     {
-      imgSrc: "Portfolio2.png",
+      imgSrc: "Project2.png",
       name: "Notepad App - Python",
       description:
         "Allows users to create, edit, and save notes. Built using Python and Tkinter with search and replace functionality.",
     },
     {
-      imgSrc: "Portfolio3.png",
+      imgSrc: "Project3.png",
       name: "Snake Game - Python",
       description:
         "Allows users to play the classic snake game. Built using Python and Pygame with a score counter and game over screen.",
+    },
+    {
+      imgSrc: "Project4.png",
+      name: "Personal Budget App (Group Project) - Spring Boot",
+      description:
+        "Allows users to manage their personal budget. Built using Spring Boot with user authentication and database storage. I worked on the front-end of the application.",
     },
   ];
 
@@ -78,7 +84,7 @@ const Portfolio = () => {
       <div className="flex items-center justify-center mt-10">
         <CircularProgress size={30} className="mr-2" />
         <p className="text-lg text-gray-800 dark:text-gray-200">
-          Other portfolios will be uploaded soon...
+          Other projects will be uploaded soon...
         </p>
       </div>
     </section>
