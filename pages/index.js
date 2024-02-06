@@ -37,7 +37,7 @@ const Home = () => {
       <Head>
         <title>YEG Website</title>
         <meta name="description" content="Yunus Emre Gültepe Website" />
-        <link rel="icon" href="/y-intersection.ico" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Main darkMode={darkMode} setDarkMode={setDarkMode} />
       {error && <p className="text-red-500">{error}</p>}

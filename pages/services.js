@@ -1,8 +1,8 @@
 // services.js
 import React from "react";
 import Image from "next/image";
-import webdev from "../public/webdev.jpg";
-import software from "../public/software.jpg";
+import webdev from "../public/services/webdev.jpg";
+import software from "../public/services/software.jpg";
 
 const Service = ({ image, title, description, technology }) => {
   return (

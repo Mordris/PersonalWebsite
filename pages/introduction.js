@@ -1,15 +1,39 @@
-// introduction.js
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Image from "next/image";
 import me from "../public/me.jpg";
 
-const Introduction = ({ jobState }) => {
-  if (!jobState) {
-    return null;
-  }
+const Introduction = () => {
+  const jobTitleData = [
+    { title: "Full-Stack Developer", color: "green" },
+    { title: "Web Developer", color: "red" },
+    { title: "Software Engineer", color: "blue" },
+  ];
 
-  const { title, color } = jobState;
+  const [jobStateIndex, setJobStateIndex] = useState(0);
+  const [showScrollButton, setShowScrollButton] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setJobStateIndex((prevIndex) => (prevIndex + 1) % jobTitleData.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [jobTitleData.length]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+      setShowScrollButton(scrollTop > 200); // Adjust this value as needed
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const { title, color } = jobTitleData[jobStateIndex];
 
   return (
     <section className="min-h-screen">

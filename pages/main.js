@@ -1,5 +1,5 @@
-// main.js
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import Header from "./header";
 import Introduction from "./introduction";
 import Services from "./services";
@@ -12,6 +12,7 @@ export default function Main({ darkMode, setDarkMode }) {
     title: "Full-Stack Developer",
     color: "yellow",
   });
+  const [showScrollButton, setShowScrollButton] = useState(false);
 
   useEffect(() => {
     const jobTitleData = [
@@ -30,6 +31,25 @@ export default function Main({ darkMode, setDarkMode }) {
 
     return () => clearInterval(interval);
   }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+      setShowScrollButton(scrollTop > 200); // Adjust this value as needed
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <div>
@@ -56,6 +76,14 @@ export default function Main({ darkMode, setDarkMode }) {
             : "rgba(255, 255, 255, 0.5)"};
           z-index: -1; /* Ensure the overlay is behind the content */
         }
+
+        .scroll-to-top {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          cursor: pointer;
+          display: ${showScrollButton ? "block" : "none"};
+        }
       `}</style>
 
       <main
@@ -70,6 +98,15 @@ export default function Main({ darkMode, setDarkMode }) {
         <Contact />
       </main>
       <Footer />
+
+      <div className="scroll-to-top" onClick={scrollToTop}>
+        <Image
+          src="/scrollTop.png"
+          alt="Scroll to top"
+          width={50}
+          height={50}
+        />
+      </div>
     </div>
   );
 }

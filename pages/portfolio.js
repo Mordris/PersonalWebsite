@@ -3,26 +3,39 @@ import React from "react";
 import Image from "next/image";
 import { CircularProgress } from "@mui/material";
 
-const ProjectCard = ({ imgSrc, name, description }) => {
+const ProjectCard = ({ imgSrc, name, description, githubName }) => {
+  const githubLink = `https://github.com/Mordris/${githubName}`;
+
   return (
-    <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden mb-8 border border-teal-400">
-      <div className="md:flex">
-        <div className="md:flex-shrink-0">
-          <Image
-            className="h-96 w-full object-cover md:h-full md:w-96"
-            src={`/Portfolio/${imgSrc}`}
-            alt={`Project: ${name}`}
-            width={1600}
-            height={1280}
-          />
+    <div
+      className="max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden mb-8 border border-teal-400"
+      style={{ height: "400px" }}
+    >
+      <div className="md:flex h-full">
+        <div className="md:flex-shrink-0" style={{ width: "400px" }}>
+          <div className="w-full h-full relative">
+            <Image
+              className="object-cover w-full h-full rounded-t-xl"
+              src={`/portfolio/${imgSrc}`}
+              alt={`Project: ${name}`}
+              layout="fill"
+            />
+          </div>
         </div>
-        <div className="p-8">
-          <h2 className="text-4xl font-semibold text-gray-800 dark:text-teal-500">
-            {name}
-          </h2>
-          <p className="mt-2 text-xl text-gray-600 dark:text-gray-800">
-            {description}
-          </p>
+        <div className="p-4 flex flex-col justify-between w-full">
+          <div>
+            <h2 className="text-lg font-semibold text-gray-800 dark:text-teal-500 mb-2">
+              {name}
+            </h2>
+            <p className="text-sm text-gray-600 dark:text-gray-800">
+              {description}
+            </p>
+          </div>
+          <div className="flex justify-end">
+            <button className="text-xs text-blue-600 hover:underline">
+              <a href={githubLink}>Learn More</a>
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -32,28 +45,39 @@ const ProjectCard = ({ imgSrc, name, description }) => {
 const Portfolio = () => {
   const projects = [
     {
-      imgSrc: "Project1.png",
+      githubName: "CountryApp",
+      imgSrc: "project1.png",
       name: "Country Information App - React.js",
       description:
         "Displays information about countries using an API. Built using React.js with search, sort, and dark mode features.",
     },
     {
-      imgSrc: "Project2.png",
+      githubName: "NotePadApp_WithPython",
+      imgSrc: "project2.png",
       name: "Notepad App - Python",
       description:
         "Allows users to create, edit, and save notes. Built using Python and Tkinter with search and replace functionality.",
     },
     {
-      imgSrc: "Project3.png",
+      githubName: "Snake_Game_With_Python",
+      imgSrc: "project3.png",
       name: "Snake Game - Python",
       description:
         "Allows users to play the classic snake game. Built using Python and Pygame with a score counter and game over screen.",
     },
     {
-      imgSrc: "Project4.png",
+      githubName: "SPMHomework",
+      imgSrc: "project4.png",
       name: "Personal Budget App (Group Project) - Spring Boot",
       description:
         "Allows users to manage their personal budget. Built using Spring Boot with user authentication and database storage. I worked on the front-end of the application.",
+    },
+    {
+      githubName: "QRCodeComponent",
+      imgSrc: "project5.png",
+      name: "QR Code",
+      description:
+        "A simple application that redirects the user to my website using a QR code. Built using HTML and CSS",
     },
   ];
 
