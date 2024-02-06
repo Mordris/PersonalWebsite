@@ -7,13 +7,13 @@ const ProjectCard = ({ imgSrc, name, description, githubName }) => {
   const githubLink = `https://github.com/Mordris/${githubName}`;
 
   return (
-    <div
-      className="max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden mb-8 border border-teal-400"
-      style={{ height: "400px" }}
-    >
+    <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden mb-8 border border-teal-400">
       <div className="md:flex h-full">
-        <div className="md:flex-shrink-0" style={{ width: "400px" }}>
-          <div className="w-full h-full relative">
+        <div
+          className="md:flex-shrink-0"
+          style={{ minWidth: "400px", maxWidth: "700px" }}
+        >
+          <div className="w-full h-80 md:h-96 relative">
             <Image
               className="object-cover w-full h-full rounded-t-xl"
               src={`/portfolio/${imgSrc}`}
@@ -22,7 +22,7 @@ const ProjectCard = ({ imgSrc, name, description, githubName }) => {
             />
           </div>
         </div>
-        <div className="p-4 flex flex-col justify-between w-full">
+        <div className="p-2 md:p-4 flex flex-col justify-between w-full">
           <div>
             <h2 className="text-lg font-semibold text-gray-800 dark:text-teal-500 mb-2">
               {name}
