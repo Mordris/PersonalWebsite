@@ -8,12 +8,9 @@ const ProjectCard = ({ imgSrc, name, description, githubName }) => {
 
   return (
     <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden mb-8 border border-teal-400">
-      <div className="md:flex h-full">
-        <div
-          className="md:flex-shrink-0"
-          style={{ minWidth: "400px", maxWidth: "700px" }}
-        >
-          <div className="w-full h-80 md:h-96 relative">
+      <div className="grid grid-cols-1 md:grid-cols-3">
+        <div className="col-span-1 md:col-span-1">
+          <div className="w-full h-64 relative">
             <Image
               className="object-cover w-full h-full rounded-t-xl"
               src={`/portfolio/${imgSrc}`}
@@ -22,7 +19,7 @@ const ProjectCard = ({ imgSrc, name, description, githubName }) => {
             />
           </div>
         </div>
-        <div className="p-2 md:p-4 flex flex-col justify-between w-full">
+        <div className="col-span-1 md:col-span-2 p-4">
           <div>
             <h2 className="text-lg font-semibold text-gray-800 dark:text-teal-500 mb-2">
               {name}
