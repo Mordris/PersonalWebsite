@@ -1,15 +1,22 @@
-// portfolio.js
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { CircularProgress } from "@mui/material";
 
 const ProjectCard = ({ imgSrc, name, description, githubName }) => {
   const githubLink = `https://github.com/Mordris/${githubName}`;
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
 
   return (
     <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden mb-8 border border-teal-400">
       <div className="grid grid-cols-1 md:grid-cols-3">
-        <div className="col-span-1 md:col-span-1">
+        <div
+          className="col-span-1 md:col-span-1 cursor-pointer"
+          onClick={toggleModal}
+        >
           <div className="w-full h-64 relative">
             <Image
               className="object-cover w-full h-full rounded-t-xl"
@@ -35,6 +42,22 @@ const ProjectCard = ({ imgSrc, name, description, githubName }) => {
           </div>
         </div>
       </div>
+      {isModalOpen && (
+        <div
+          className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex justify-center items-center z-50"
+          onClick={toggleModal}
+        >
+          <div className="max-w-3xl w-full p-4">
+            <Image
+              className="object-contain rounded-xl"
+              src={`/portfolio/${imgSrc}`}
+              alt={`Project: ${name}`}
+              width={800}
+              height={600}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
