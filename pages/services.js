@@ -1,12 +1,12 @@
 // services.js
 import React from "react";
 import Image from "next/image";
-import webdev from "../public/services/webdev.jpg";
-import software from "../public/services/software.jpg";
+import webdev from "../public/myservices/webdev.jpg";
+import software from "../public/myservices/software.jpg";
 
 const Service = ({ image, title, description, technology }) => {
   return (
-    <div className="text-center shadow-lg p-10 rounded-xl my-10 border bg-gray-100 border-teal-400 dark:bg-gray-900">
+    <div className="text-center shadow-lg p-10 rounded-xl my-10 border bg-gray-100 border-teal-400 dark:bg-gray-900 lg:w-1/2 md:w-3/4 sm:w-full mx-auto">
       <Image
         className="m-auto"
         src={image}
