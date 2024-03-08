@@ -4,9 +4,12 @@ import React, { useState } from "react";
 const Contact = () => {
   const [error, setError] = useState(null);
 
+  const email = "yemregultepe@gmail.com";
+  const phoneNumber = "+90 538 072 8983";
+
   const handleSendEmail = () => {
     try {
-      const receiverEmail = "yemregultepe@gmail.com";
+      const receiverEmail = email;
       window.location.href = `mailto:${receiverEmail}`;
     } catch (error) {
       console.error("Error sending email:", error);
@@ -16,7 +19,6 @@ const Contact = () => {
 
   const handleCall = () => {
     try {
-      const phoneNumber = "+90 538 072 8983";
       window.location.href = `tel:${phoneNumber}`;
     } catch (error) {
       console.error("Error initiating phone call:", error);
@@ -57,12 +59,8 @@ const Contact = () => {
         </button>
       </div>
       <div className="mt-4 text-center">
-        <p className="text-gray-800 dark:text-gray-200">
-          Email: yemregultepe@gmail.com
-        </p>
-        <p className="text-gray-800 dark:text-gray-200">
-          Tel: +90 538 072 8983
-        </p>
+        <p className="text-gray-800 dark:text-gray-200">Email: {email}</p>
+        <p className="text-gray-800 dark:text-gray-200">Tel: {phoneNumber}</p>
       </div>
     </section>
   );

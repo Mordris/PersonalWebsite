@@ -35,8 +35,11 @@ const Home = () => {
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
-        <title>YEG Website</title>
-        <meta name="description" content="Yunus Emre Gültepe Website" />
+        <title>Yunus Emre Gültepe</title>
+        <meta
+          name="description"
+          content="Yunus Emre Gültepe Portfolio Website"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Main darkMode={darkMode} setDarkMode={setDarkMode} />

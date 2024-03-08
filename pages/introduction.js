@@ -10,6 +10,12 @@ const Introduction = () => {
     { title: "Software Engineer", color: "blue" },
   ];
 
+  const Links = {
+    Instagram: "https://instagram.com/emregltp0",
+    LinkedIn: "https://www.linkedin.com/in/yunus-emre-g%C3%BCltepe",
+    GitHub: "https://github.com/Mordris",
+  };
+
   const [jobStateIndex, setJobStateIndex] = useState(0);
   const [showScrollButton, setShowScrollButton] = useState(false);
 
@@ -55,17 +61,17 @@ const Introduction = () => {
       <div className="flex justify-center">
         <ul className="flex items-center mt-12 gap-6 py-3 text-gray-600 dark:text-gray-400">
           <li>
-            <a href="https://instagram.com/emregltp0">
+            <a href={`${Links.Instagram}`} target="_blank">
               <AiFillInstagram className="text-4xl md:text-5xl m-auto" />
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/yunus-emre-g%C3%BCltepe">
+            <a href={`${Links.LinkedIn}`} target="_blank">
               <AiFillLinkedin className="text-4xl md:text-5xl ml-6" />
             </a>
           </li>
           <li>
-            <a href="https://github.com/Mordris">
+            <a href={`${Links.GitHub}`} target="_blank">
               <AiFillGithub className="text-4xl md:text-5xl ml-6" />
             </a>
           </li>
