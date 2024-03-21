@@ -81,8 +81,8 @@ const Introduction = () => {
         <Image
           src={me}
           alt="Yunus Emre Gültepe"
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: "contain" }}
         />
       </div>
     </section>

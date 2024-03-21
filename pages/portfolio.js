@@ -37,7 +37,8 @@ const ProjectCard = ({ imgSrc, name, description, githubName }) => {
               className="object-cover w-full h-full rounded-t-xl"
               src={`/portfolio/${imgSrc[0]}`} // Only display the first image
               alt={`Project: ${name}`}
-              layout="fill"
+              fill
+              style={{ objectFit: "contain" }}
             />
           </div>
         </div>
@@ -62,34 +63,31 @@ const ProjectCard = ({ imgSrc, name, description, githubName }) => {
           className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex justify-center items-center z-50"
           onClick={toggleModal}
         >
-          <div className="max-w-3xl w-full p-4 relative">
+          <div className="max-w-4xl w-full p-4 relative">
+            <div style={{ paddingTop: "85%", position: "relative" }}>
+              <Image
+                src={`/portfolio/${imgSrc[currentImageIndex]}`}
+                alt={`Project: ${name}`}
+                fill
+                style={{ objectFit: "cover" }}
+              />
+            </div>
             {imgSrc.length > 1 && (
-              <div className="absolute top-1/2 -left-5 transform -translate-y-1/2">
+              <div className="flex justify-between mt-2">
                 <button
                   className="bg-white bg-opacity-50 p-2 rounded-full border border-teal-500"
                   onClick={navigateToPreviousImage}
                 >
-                  &lt;
+                  &lt; Previous
                 </button>
-              </div>
-            )}
-            {imgSrc.length > 1 && (
-              <div className="absolute top-1/2 -right-5 transform -translate-y-1/2">
                 <button
                   className="bg-white bg-opacity-50 p-2 rounded-full border border-teal-500"
                   onClick={navigateToNextImage}
                 >
-                  &gt;
+                  Next &gt;
                 </button>
               </div>
             )}
-            <Image
-              className="object-contain rounded-xl"
-              src={`/portfolio/${imgSrc[currentImageIndex]}`}
-              alt={`Project: ${name}`}
-              width={800}
-              height={600}
-            />
           </div>
         </div>
       )}
@@ -124,6 +122,7 @@ const Portfolio = () => {
           <ProjectCard key={index} {...project} />
         ))}
       </div>
+
       <div className="flex items-center justify-center mt-10">
         <CircularProgress size={30} className="mr-2" />
         <p className="text-lg text-gray-800 dark:text-gray-200">
