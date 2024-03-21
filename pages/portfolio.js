@@ -38,6 +38,7 @@ const ProjectCard = ({ imgSrc, name, description, githubName }) => {
               src={`/portfolio/${imgSrc[0]}`} // Only display the first image
               alt={`Project: ${name}`}
               fill
+              sizes="100% 100%"
               style={{ objectFit: "contain" }}
             />
           </div>
@@ -69,6 +70,7 @@ const ProjectCard = ({ imgSrc, name, description, githubName }) => {
                 src={`/portfolio/${imgSrc[currentImageIndex]}`}
                 alt={`Project: ${name}`}
                 fill
+                sizes="100% 100%"
                 style={{ objectFit: "cover" }}
               />
             </div>

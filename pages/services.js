@@ -11,7 +11,6 @@ const Service = ({ image, title, description, technology }) => {
         className="m-auto"
         src={image}
         width={300}
-        height={300}
         alt={title}
       />
       <h3 className="text-lg font-medium pt-8 pb-2 py-1 ">{title}</h3>

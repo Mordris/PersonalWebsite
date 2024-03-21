@@ -82,6 +82,7 @@ const Introduction = () => {
           src={me}
           alt="Yunus Emre Gültepe"
           fill
+          sizes="100% 100%"
           style={{ objectFit: "contain" }}
         />
       </div>
