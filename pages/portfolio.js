@@ -54,7 +54,9 @@ const ProjectCard = ({ imgSrc, name, description, githubName }) => {
           </div>
           <div className="flex justify-end">
             <button className="text-xs text-blue-600 hover:underline">
-              <a href={githubLink}>Learn More</a>
+              <a target="_blank" href={githubLink}>
+                Learn More
+              </a>
             </button>
           </div>
         </div>
