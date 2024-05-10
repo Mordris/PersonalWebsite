@@ -34,6 +34,13 @@ const projects = [
     description:
       "A simple application that redirects the user to my website using a QR code. Built using HTML and CSS",
   },
+  {
+    githubName: "distance-calculation-app",
+    imgSrc: ["project6.png"],
+    name: "Distance Calculation App - React.js",
+    description:
+      "Calculates the distance between two locations. Built using React.js with nominatim API.",
+  }
 ];
 
 export default projects;

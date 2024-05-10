@@ -35,7 +35,7 @@ const ProjectCard = ({ imgSrc, name, description, githubName }) => {
           <div className="w-full h-64 relative">
             <Image
               className="object-cover w-full h-full rounded-t-xl"
-              src={`/portfolio/${imgSrc[0]}`} // Only display the first image
+              src={`/Portfolio/${imgSrc[0]}`} // Only display the first image
               alt={`Project: ${name}`}
               fill
               sizes="100% 100%"
@@ -69,7 +69,7 @@ const ProjectCard = ({ imgSrc, name, description, githubName }) => {
           <div className="max-w-4xl w-full p-4 relative">
             <div style={{ paddingTop: "85%", position: "relative" }}>
               <Image
-                src={`/portfolio/${imgSrc[currentImageIndex]}`}
+                src={`/Portfolio/${imgSrc[currentImageIndex]}`}
                 alt={`Project: ${name}`}
                 fill
                 sizes="100% 100%"
