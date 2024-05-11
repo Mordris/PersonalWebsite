@@ -40,7 +40,14 @@ const projects = [
     name: "Distance Calculation App - React.js",
     description:
       "Calculates the distance between two locations. Built using React.js with nominatim API.",
-  }
+  },
+  {
+    githubName: "notepad-app",
+    imgSrc: ["project7.png", "project7-1.png"],
+    name: "Notepad App - React.js",
+    description:
+      "Allows users to create, edit, and save notes. Built using React.js with local storage.",
+  },
 ];
 
 export default projects;
