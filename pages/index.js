@@ -1,17 +1,18 @@
-// index.js
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import Main from "./main";
 
 const Home = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true); // Set default to true for dark mode
   const [error, setError] = useState(null);
 
   useEffect(() => {
     try {
       const isBrowser = typeof window !== "undefined";
       const storedMode = isBrowser ? localStorage.getItem("darkMode") : "";
-      const initialMode = storedMode === "dark";
+
+      // If there's no stored mode, it will default to dark mode.
+      const initialMode = storedMode === "dark" || storedMode === null;
 
       setDarkMode(initialMode);
     } catch (error) {
@@ -24,7 +25,7 @@ const Home = () => {
     try {
       const isBrowser = typeof window !== "undefined";
       if (isBrowser) {
-        localStorage.setItem("darkMode", darkMode ? "dark" : "");
+        localStorage.setItem("darkMode", darkMode ? "dark" : "light");
       }
     } catch (error) {
       console.error("Error updating dark mode in localStorage:", error);
