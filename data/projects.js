@@ -13,6 +13,19 @@ const projects = [
       "Allows users to manage orders in a restaurant. Built using React.js with MongoDB storage.",
   },
   {
+    githubName: "poseidons-plate",
+    imgSrc: [
+      "project9.png",
+      "project9-1.png",
+      "project9-2.png",
+      "project9-3.png",
+      "project9-4.png",
+    ],
+    name: "Poseidon's Plate - React.js",
+    description:
+      "A restaurant website with a menu and contact form and reservation system that checks the selected time to avoid overcrowding. Built using React.js, Node.js, and MongoDB.",
+  },
+  {
     githubName: "SPMHomework",
     imgSrc: ["project4.png"],
     name: "Personal Budget App (Group Project) - Spring Boot",
