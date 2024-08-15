@@ -61,6 +61,13 @@ const projects = [
       "Displays information about countries using an API. Built using React.js with search, sort, and dark mode features.",
   },
   {
+    githubName: "ExchaRate",
+    imgSrc: ["project10.png", "project10-1.png", "project10-2.png"],
+    name: "Currency Exchange Rate and Calculation App - React.js",
+    description:
+      "Displays exchange rates and allows users to calculate the amount in different currencies with request limiter. Built using React.js with an API.",
+  },
+  {
     githubName: "NotePadApp_WithPython",
     imgSrc: ["project2.png"],
     name: "Notepad App - Python",
