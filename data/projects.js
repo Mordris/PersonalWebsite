@@ -40,6 +40,13 @@ const projects = [
       "Calculates the distance between two locations. Built using React.js with nominatim API.",
   },
   {
+    githubName: "weather-app",
+    imgSrc: ["project11.png", "project11-1.png", "project11-2.png"],
+    name: "Weather App - React.js",
+    description:
+      "Displays the weather forecast for a searched or saved city. Built using React.js with Open-Meteo API and Nominatim Openstreetmap. Used local storage to save cities and Chakra UI for styling.",
+  },
+  {
     githubName: "Snake_Game_With_Python",
     imgSrc: ["project3.png"],
     name: "Snake Game - Python",
