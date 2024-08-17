@@ -10,7 +10,7 @@ const projects = [
     ],
     name: "Restaurant POS App - React.js",
     description:
-      "Allows users to manage orders in a restaurant. Built using React.js with MongoDB storage.",
+      "Allows users to manage orders in a restaurant. Completed orders stored in history. Ongoing orders can be modified and saved. Tables maintain order data. A receipt pdf file is created for completed orders. Built using React.js, Node.js with MongoDB storage.",
   },
   {
     githubName: "poseidons-plate",
@@ -30,21 +30,21 @@ const projects = [
     imgSrc: ["project4.png"],
     name: "Personal Budget App (Group Project) - Spring Boot",
     description:
-      "Allows users to manage their personal budget. Built using Spring Boot with user authentication and database storage. I worked on the front-end of the application.",
+      "Allows users to manage their personal budget see detailed graphs and tables and also currency rates. Built using Spring Boot with user authentication and database storage. I worked on the front-end of the application.",
   },
   {
     githubName: "distance-calculation-app",
     imgSrc: ["project6.png"],
     name: "Distance Calculation App - React.js",
     description:
-      "Calculates the distance between two locations. Built using React.js with nominatim API.",
+      "Calculates the distance between two locations on the map. Built using React.js with nominatim API.",
   },
   {
     githubName: "weather-app",
     imgSrc: ["project11.png", "project11-1.png", "project11-2.png"],
     name: "Weather App - React.js",
     description:
-      "Displays the weather forecast for a searched or saved city. Built using React.js with Open-Meteo API and Nominatim Openstreetmap. Used local storage to save cities and Chakra UI for styling.",
+      "Displays the weather forecast for a searched or saved city. Built using React.js with Open-Meteo API and Nominatim Openstreetmap. Used local storage to save cities and Chakra UI for styling. Nominatim API is used to get the coordinates of the city entered and Open-Meteo is used to get the weather data of that coordiates.",
   },
   {
     githubName: "Snake_Game_With_Python",
