@@ -1,5 +1,20 @@
 const projects = [
   {
+    githubName: "MoleChat",
+    imgSrc: [
+      "project12.png",
+      "project12-1.png",
+      "project12-2.png",
+      "project12-3.png",
+      "project12-4.png",
+      "project12-5.png",
+      "project12-6.png",
+    ],
+    name: "MoleChat - React.js",
+    description:
+      "A chat application that allows users to create chat rooms and send messages. Built using React.js, Node.js and Chat Engine API.",
+  },
+  {
     githubName: "RestaurantPOSapp",
     imgSrc: [
       "project8.png",
