@@ -1,5 +1,12 @@
 const projects = [
   {
+    githubName: "SolarSystemThreeJS",
+    imgSrc: ["project14.png", "project14-1.png"],
+    name: "Solar System - Three.js",
+    description:
+      "A 3D solar system model built using Three.js. The application allows users to explore the solar system and view information about each planet. The application is built using React.js and Three.js with a user-friendly interface.",
+  },
+  {
     githubName: "",
     imgSrc: ["project13.png", "project13-1.png", "project13-2.png"],
     name: "AI-Chatbot For Sakarya University",
