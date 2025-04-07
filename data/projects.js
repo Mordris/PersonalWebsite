@@ -14,18 +14,25 @@ const projects = [
       "Landrop is a cross-platform tool for transferring files, folders, and text snippets directly between devices on your local network. It uses Zeroconf (Bonjour/Avahi) for automatic device discovery, eliminating the need to manually enter IP addresses.",
   },
   {
-    githubName: "SolarSystemThreeJS",
-    imgSrc: ["project14.png", "project14-1.png"],
-    name: "Solar System - Three.js",
-    description:
-      "A 3D solar system model built using Three.js. The application allows users to explore the solar system and view information about each planet. The application is built using React.js and Three.js with a user-friendly interface.",
-  },
-  {
     githubName: "",
     imgSrc: ["project13.png", "project13-1.png", "project13-2.png"],
     name: "AI-Chatbot For Sakarya University",
     description:
       "A chatbot application that provides information about Sakarya University. Built using Mistral 7B model and FAISS vector database. The chatbot is trained on the university's website and can answer questions related to the university also unrelated too. The application is built using Python and FASTAPI with a user-friendly interface using React.js.",
+  },
+  {
+    githubName: "WhatCanICook",
+    imgSrc: ["project16.png", "project16-1.png", "project16-2.png"],
+    name: "What Can I Cook - AI Recipe App",
+    description:
+      "This full-stack web application helps users discover recipes they can make based on the ingredients they have available, leveraging the power of Google's Gemini AI. It aims to reduce food waste and provide culinary inspiration by intelligently matching ingredients to potential dishes.",
+  },
+  {
+    githubName: "SolarSystemThreeJS",
+    imgSrc: ["project14.png", "project14-1.png"],
+    name: "Solar System - Three.js",
+    description:
+      "A 3D solar system model built using Three.js. The application allows users to explore the solar system and view information about each planet. The application is built using React.js and Three.js with a user-friendly interface.",
   },
   {
     githubName: "MoleChat",
