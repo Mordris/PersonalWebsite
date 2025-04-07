@@ -1,5 +1,19 @@
 const projects = [
   {
+    githubName: "LanDrop-file-transfer-over-network",
+    imgSrc: [
+      "project15.png",
+      "project15-1.png",
+      "project15-2.png",
+      "project15-3.png",
+      "project15-4.png",
+      "project15-5.png",
+    ],
+    name: "LanDrop - File Transfer Over Network",
+    description:
+      "Landrop is a cross-platform tool for transferring files, folders, and text snippets directly between devices on your local network. It uses Zeroconf (Bonjour/Avahi) for automatic device discovery, eliminating the need to manually enter IP addresses.",
+  },
+  {
     githubName: "SolarSystemThreeJS",
     imgSrc: ["project14.png", "project14-1.png"],
     name: "Solar System - Three.js",

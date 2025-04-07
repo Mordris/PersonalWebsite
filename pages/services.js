@@ -7,12 +7,7 @@ import software from "../public/myservices/software.jpg";
 const Service = ({ image, title, description, technology }) => {
   return (
     <div className="text-center shadow-lg p-10 rounded-xl my-10 border bg-gray-100 border-teal-400 dark:bg-gray-900 lg:w-1/2 md:w-3/4 sm:w-full mx-auto">
-      <Image
-        className="m-auto"
-        src={image}
-        width={300}
-        alt={title}
-      />
+      <Image className="m-auto" src={image} width={300} alt={title} />
       <h3 className="text-lg font-medium pt-8 pb-2 py-1 ">{title}</h3>
       <p className="text-lg py-2 leading-8 text-gray-800 dark:text-gray-200">
         {description}
@@ -33,32 +28,27 @@ const Services = () => {
   const servicesData = [
     {
       image: webdev,
-      title: "Web Development",
+      title: "Frontend Web Development",
       description:
-        "As a web developer, I specialize in creating dynamic and user-friendly websites. With a focus on crafting visually appealing and functional interfaces, I bring ideas to life by leveraging the latest web technologies. Let's collaborate to build engaging online experiences.",
+        "I specialize in creating visually appealing and user-friendly web applications. I have a strong understanding of HTML, CSS, and JavaScript, and I am proficient in using frameworks like React.js to build dynamic and responsive interfaces. My goal is to deliver high-quality code that meets your needs and exceeds your expectations.",
       technology: [
-        "HTML",
-        "CSS",
+        "HTML and CSS",
         "JavaScript",
-        "React.js",
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-        "Next.js",
+        "React.js and Next.js",
+        "Tailwind CSS",
+        "Chakra UI and Material UI",
       ],
     },
     {
       image: software,
-      title: "Software Engineering",
+      title: "Backend Software Development",
       description:
-        "As a software engineer, I specialize in developing efficient and innovative solutions. With a passion for pushing the boundaries of technology, I'm dedicated to creating impactful software experiences. Let's build something remarkable together.",
+        "I focus on building robust and scalable server-side applications. My expertise lies in designing APIs, managing databases, and ensuring seamless communication between the frontend and backend. Let's work together to create efficient and reliable software solutions.",
       technology: [
-        "C++",
-        "Python",
-        "Java",
-        "Spring Boot",
-        "MySQL",
-        "PostgreSQL",
+        "Node.js and Express.js",
+        "Python Flask and FastAPI",
+        "MongoDB , PostgreSQL",
+        "AWS EC2 and S3",
         "Docker",
       ],
     },
