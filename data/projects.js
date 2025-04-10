@@ -18,7 +18,7 @@ const projects = [
     imgSrc: ["project13.png", "project13-1.png", "project13-2.png"],
     name: "AI-Chatbot For Sakarya University",
     description:
-      "A chatbot application that provides information about Sakarya University. Built using Mistral 7B model and FAISS vector database. The chatbot is trained on the university's website and can answer questions related to the university also unrelated too. The application is built using Python and FASTAPI with a user-friendly interface using React.js.",
+      "Developed Thalassa, a React/FastAPI AI assistant for Sakarya University using RAG on Turkish documents. Created two versions: one leveraging the OpenAI API (GPT-3.5/4) and another utilizing local Mistral-7B (Ollama). Both employ FAISS and multilingual Sentence Transformers for accurate cross-lingual querying (TR/EN) and context-aware responses.",
   },
   {
     githubName: "WhatCanICook",
