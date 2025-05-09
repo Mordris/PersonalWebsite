@@ -21,6 +21,13 @@ const projects = [
       "Developed Thalassa, a React/FastAPI AI assistant for Sakarya University using RAG on Turkish documents. Created two versions: one leveraging the OpenAI API (GPT-3.5/4) and another utilizing local Mistral-7B (Ollama). Both employ FAISS and multilingual Sentence Transformers for accurate cross-lingual querying (TR/EN) and context-aware responses.",
   },
   {
+    githubName: "simple_blockchain_py",
+    imgSrc: ["project17.png", "project17-1.png"],
+    name: "Interactive Web-Based Blockchain Simulator",
+    description:
+      "A Python and Flask web application simulating a basic blockchain with Proof-of-Work. Features an interactive UI for adding transactions, mining blocks (with time display), chain validation, and persistence via JSON. Demonstrates core blockchain concepts in an accessible way.",
+  },
+  {
     githubName: "WhatCanICook",
     imgSrc: ["project16.png", "project16-1.png", "project16-2.png"],
     name: "What Can I Cook - AI Recipe App",
